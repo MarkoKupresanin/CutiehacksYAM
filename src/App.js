@@ -1,11 +1,15 @@
 import './App.css';
 
 function App() {
+  const title = 'Welcome to the new blog';
+  const likes = 50;
+
   return (
     <div className="App">
-      <header className="content">
-        <h1>YAM Cutiehack!!!!!!!!!!!!!!!</h1>
-      </header>
+      <div className="content">
+        <h1>{ title }</h1>
+        <p Like { likes } times>
+      </div>
     </div>
   );
 }
