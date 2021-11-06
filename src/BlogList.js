@@ -2,8 +2,16 @@ import { useState, useEffect } from 'react';
 
 
 const BlogList = () => {
+    
+    const createClick = () => {
+        console.log("It works mf!");
+    }
+
     return (
-        <h1>test test test</h1>
+        <div className ="createblog">
+            <h2>Welcome, create a new blog!</h2>
+            <button onClick={createClick()}>Create Blog</button>
+        </div>
     );
 }
  

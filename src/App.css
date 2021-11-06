@@ -2,9 +2,21 @@
   text-align: center;
 }
 
+
+h1{
+  color: skyblue;
+  background-color: peachpuff;
+}
+
 footer {
   text-align: center;
-  color: maroon;
+  color: skyblue;
+}
+
+.navbar{
+  margin-bottom: 25px;
+  padding: 5px;
+  border: 1px black solid;
 }
 
 .HomepageContent{
@@ -13,22 +25,11 @@ footer {
 }
 
 .NotFoundDiv{
-  background-color: greenyellow;
+  background-color: peachpuff;
   padding: 20px;
 }
 
-.links {
-  text-decoration: none;
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: yellow;
-  font-weight: 400;
-}
-
-.links a {
-  border-radius: 15px;
-  border: 2px white solid;
-  background-color: white;
-  padding: 5px;
-  text-decoration: none;
+.createblog{
+  color: skyblue;
+  background-color: peachpuff;
 }
