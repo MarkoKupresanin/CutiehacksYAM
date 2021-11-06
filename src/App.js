@@ -25,7 +25,19 @@ const firebaseConfig = {
 
 
 
-
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore();
+  
+  
+  const docRef = doc(db, "topics", "posts");
+  getDoc(docRef).then(docSnap=>{
+    if (docSnap.exists()) {
+      console.log("Document data:", docSnap.data());
+    } else {
+      // doc.data() will be undefined in this case
+      console.log("No such document!");
+    }
+  })
 
 
   return (
@@ -36,7 +48,7 @@ const firebaseConfig = {
       <Switch>
           <Route exact path="/" component={Home}></Route>
           {/* <Route path="/posts" component={BlogList}></Route> */}
-          <Route path="*">
+          <Route path="*" />
             <NotFound />
         <Navbar />
           <Route exact path="/">
