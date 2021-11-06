@@ -53,7 +53,6 @@ const firebaseConfig = {
         <Navbar />
           <Route exact path="/">
             <div className="content">
-              <h1>{ title }</h1>
               
             </div>
           </Route>
