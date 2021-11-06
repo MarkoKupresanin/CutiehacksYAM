@@ -4,8 +4,10 @@ import Footer from './Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './NotFound';
 
-function App() {
-  const title = 'Welcome to YAM Blog';
+
+
+
+
 
   return (
     <Router>
@@ -15,6 +17,7 @@ function App() {
           <Route exact path="/">
             <div className="content">
               <h1>{ title }</h1>
+              
             </div>
           </Route>
         <Route path="*">
@@ -25,6 +28,6 @@ function App() {
     </div>
   </Router>
   );
-}
+
 
 export default App;
