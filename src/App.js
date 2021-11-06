@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 import { collection, getDocs } from "firebase/firestore"; 
+import { doc, getDoc } from "firebase/firestore";
 
 
 
@@ -26,10 +27,20 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
 
-console.log(db)
-getDocs(collection(db, "topics")).forEach(doc =>{
-  console.log(doc);
-}) 
+const docRef = doc(db, "topics", "posts");
+getDoc(docRef).then(docSnap=>{
+  if (docSnap.exists()) {
+    console.log("Document data:", docSnap.data());
+  } else {
+    // doc.data() will be undefined in this case
+    console.log("No such document!");
+  }
+})
+
+
+// console.log(db)
+// console.log(collection(db, 'topics', 'posts'));
+
 
 
   return (
