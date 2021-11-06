@@ -12,3 +12,19 @@ footer {
   text-align: center;
   color: maroon;
 }
+
+.navbar{
+  margin-bottom: 25px;
+  padding: 5px;
+  border: 1px red solid;
+}
+
+.HomepageContent{
+  padding: 300px;
+  border: 3px black dashed;
+}
+
+.NotFoundDiv{
+  background-color: greenyellow;
+  padding: 20px;
+}
