@@ -8,7 +8,7 @@ const BlogList = () => {
     }
 
     return (
-        <div classname ="createblog">
+        <div className ="createblog">
             <h2>Welcome, create a new blog!</h2>
             <button onClick={createClick()}>Create Blog</button>
         </div>
