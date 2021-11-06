@@ -1,11 +1,12 @@
 import './App.css';
+import Navbar from './NavBar';
 
 function App() {
-  const title = 'Welcome to the new blog';
-  const likes = 50;
+  const title = 'Welcome to YAM Blog';
 
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
         <h1>{ title }</h1>
       </div>
