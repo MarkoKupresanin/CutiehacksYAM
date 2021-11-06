@@ -3,9 +3,8 @@ import { useState, useEffect } from 'react';
 
 const BlogList = () => {
     
-    const createClick = (event) => {
-        event.preventDefault();
-        alert("It works mf!");
+    const createClick = () => {
+        console.log("It works mf!");
     }
 
     return (
