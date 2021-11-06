@@ -2,21 +2,9 @@
   text-align: center;
 }
 
-
-h1{
-  color: red;
-  background-color: green;
-}
-
 footer {
   text-align: center;
   color: maroon;
-}
-
-.navbar{
-  margin-bottom: 25px;
-  padding: 5px;
-  border: 1px red solid;
 }
 
 .HomepageContent{
@@ -27,4 +15,20 @@ footer {
 .NotFoundDiv{
   background-color: greenyellow;
   padding: 20px;
+}
+
+.links {
+  text-decoration: none;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: yellow;
+  font-weight: 400;
+}
+
+.links a {
+  border-radius: 15px;
+  border: 2px white solid;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
 }

@@ -1,8 +1,8 @@
 const Navbar = () => {
     return (  
         <nav className="navbar">
-            <h1>YAM Blog</h1>
             <div className="links">
+                <h1>YAM-ster</h1>
                 <a href="/">Home </a>
                 <a href="/posts">New Post</a>
             </div>
