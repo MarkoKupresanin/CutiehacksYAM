@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const BlogList = () => {
     return (
-        <h1>shit</h1>
+        <h1>test test test</h1>
     );
 }
  

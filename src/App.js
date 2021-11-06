@@ -47,13 +47,13 @@ const firebaseConfig = {
     <div className='content'>
       <Switch>
           <Route exact path="/" component={Home}></Route>
-          {/* <Route path="/posts" component={BlogList}></Route> */}
+          <Route path="/posts" component={BlogList}></Route>
           <Route path="*" />
             <NotFound />
         <Navbar />
           <Route exact path="/">
             <div className="content">
-              
+              <p>{  }</p>
             </div>
           </Route>
       </Switch>
