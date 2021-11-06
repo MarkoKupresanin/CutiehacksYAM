@@ -44,7 +44,8 @@ footer {
 }
 
 .links a {
-  border-radius: 15px;
+  border-radius: 8px;
+  margin: 5px;
   border: 2px white solid;
   background-color: white;
   padding: 5px;
