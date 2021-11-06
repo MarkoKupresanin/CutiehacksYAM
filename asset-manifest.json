@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CutiehacksYAM/static/css/main.19e649c3.chunk.css",
+    "main.js": "/CutiehacksYAM/static/js/main.9833832c.chunk.js",
+    "main.js.map": "/CutiehacksYAM/static/js/main.9833832c.chunk.js.map",
+    "runtime-main.js": "/CutiehacksYAM/static/js/runtime-main.cb323154.js",
+    "runtime-main.js.map": "/CutiehacksYAM/static/js/runtime-main.cb323154.js.map",
+    "static/js/2.439b628d.chunk.js": "/CutiehacksYAM/static/js/2.439b628d.chunk.js",
+    "static/js/2.439b628d.chunk.js.map": "/CutiehacksYAM/static/js/2.439b628d.chunk.js.map",
+    "static/js/3.7817cbaf.chunk.js": "/CutiehacksYAM/static/js/3.7817cbaf.chunk.js",
+    "static/js/3.7817cbaf.chunk.js.map": "/CutiehacksYAM/static/js/3.7817cbaf.chunk.js.map",
+    "index.html": "/CutiehacksYAM/index.html",
+    "static/css/main.19e649c3.chunk.css.map": "/CutiehacksYAM/static/css/main.19e649c3.chunk.css.map",
+    "static/js/2.439b628d.chunk.js.LICENSE.txt": "/CutiehacksYAM/static/js/2.439b628d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/CutiehacksYAM/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb323154.js",
+    "static/js/2.439b628d.chunk.js",
+    "static/css/main.19e649c3.chunk.css",
+    "static/js/main.9833832c.chunk.js"
+  ]
+}
