@@ -4,19 +4,19 @@
 
 
 h1{
-  color: red;
-  background-color: green;
+  color: skyblue;
+  background-color: peachpuff;
 }
 
 footer {
   text-align: center;
-  color: maroon;
+  color: skyblue;
 }
 
 .navbar{
   margin-bottom: 25px;
   padding: 5px;
-  border: 1px red solid;
+  border: 1px black solid;
 }
 
 .HomepageContent{
@@ -25,6 +25,11 @@ footer {
 }
 
 .NotFoundDiv{
-  background-color: greenyellow;
+  background-color: peachpuff;
   padding: 20px;
+}
+
+.createblog{
+  color: skyblue;
+  background-color: peachpuff;
 }
