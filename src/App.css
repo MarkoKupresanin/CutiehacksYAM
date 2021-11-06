@@ -33,3 +33,20 @@ footer {
   color: skyblue;
   background-color: peachpuff;
 }
+
+
+.links {
+  text-decoration: none;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: yellow;
+  font-weight: 400;
+}
+
+.links a {
+  border-radius: 15px;
+  border: 2px white solid;
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+}
