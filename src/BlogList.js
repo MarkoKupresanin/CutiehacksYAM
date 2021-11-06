@@ -20,8 +20,8 @@ const BlogList = () => {
       const db = getFirestore();
       
       
-    const createClick = (event) => {
-        event.preventDefault();
+    const createClick = () => {
+
         console.log("It works mf!");
         const docRef = doc(db, "topics", "posts");
         getDoc(docRef).then(docSnap=>{
