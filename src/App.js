@@ -10,18 +10,18 @@ function App() {
   return (
     <Router>
     <div className="App">
+      <Switch>
         <Navbar />
-        <Switch>
           <Route exact path="/">
             <div className="content">
               <h1>{ title }</h1>
             </div>
           </Route>
-        <Footer />
         <Route path="*">
           <NotFound />
         </Route>
-        </Switch>
+      </Switch>
+      <Footer />
     </div>
   </Router>
   );
