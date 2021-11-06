@@ -13,7 +13,6 @@ import { doc, getDoc } from "firebase/firestore";
 
 
 
-<<<<<<< HEAD
 function App() {
 const firebaseConfig = {
     apiKey: "AIzaSyC3_QW2LaKIl4wJ2abltFtjuUbN9Nxbe7E",
@@ -24,29 +23,9 @@ const firebaseConfig = {
     appId: "1:878503987702:web:2e7e4c1251c266c4d4dfd7"
   };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore();
-
-
-const docRef = doc(db, "topics", "posts");
-getDoc(docRef).then(docSnap=>{
-  if (docSnap.exists()) {
-    console.log("Document data:", docSnap.data());
-  } else {
-    // doc.data() will be undefined in this case
-    console.log("No such document!");
-  }
-})
-
-
-// console.log(db)
-// console.log(collection(db, 'topics', 'posts'));
-
-=======
 
 
 
->>>>>>> 1bb09f5ccbf7b33eadcf361ca573e253def1129a
 
 
   return (
@@ -55,19 +34,16 @@ getDoc(docRef).then(docSnap=>{
     <Navbar />
     <div className='content'>
       <Switch>
-<<<<<<< HEAD
           <Route exact path="/" component={Home}></Route>
           {/* <Route path="/posts" component={BlogList}></Route> */}
           <Route path="*">
             <NotFound />
-=======
         <Navbar />
           <Route exact path="/">
             <div className="content">
               <h1>{ title }</h1>
               
             </div>
->>>>>>> 1bb09f5ccbf7b33eadcf361ca573e253def1129a
           </Route>
       </Switch>
       </div>
@@ -75,6 +51,6 @@ getDoc(docRef).then(docSnap=>{
     <Footer />
   </Router>
   );
-
+}
 
 export default App;
