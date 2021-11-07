@@ -16,6 +16,18 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 
 
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBv9viQ5RO5J1gSSqle3pWKi4ZmNo7dlfM",
+  authDomain: "cutiehacks-b04fe.firebaseapp.com",
+  projectId: "cutiehacks-b04fe",
+  storageBucket: "cutiehacks-b04fe.appspot.com",
+  messagingSenderId: "550438995683",
+  appId: "1:550438995683:web:65e846b53118164c2ba7d6",
+  measurementId: "G-HKFTP7W35F"
+};
+const app = initializeApp(firebaseConfig);
+
 const auth = getAuth();
 signOut(auth).then(() => {
   // Sign-out successful.
@@ -27,18 +39,7 @@ signOut(auth).then(() => {
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBv9viQ5RO5J1gSSqle3pWKi4ZmNo7dlfM",
-  authDomain: "cutiehacks-b04fe.firebaseapp.com",
-  projectId: "cutiehacks-b04fe",
-  storageBucket: "cutiehacks-b04fe.appspot.com",
-  messagingSenderId: "550438995683",
-  appId: "1:550438995683:web:65e846b53118164c2ba7d6",
-  measurementId: "G-HKFTP7W35F"
-};
-
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const provider = new GoogleAuthProvider();
 
