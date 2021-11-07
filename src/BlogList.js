@@ -38,7 +38,7 @@ const BlogList = () => {
     return (
         <div className ="createblog">
             <h2>Welcome, create a new blog!</h2> 
-            <button onClick={createClick()}>Create Blog</button>
+            <button onClick={createClick}>Create Blog</button>
             <div id ="testControl">
                 <input type="text"/>
             </div>
