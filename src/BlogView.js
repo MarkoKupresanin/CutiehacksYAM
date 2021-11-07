@@ -17,33 +17,9 @@ const BlogView = () => {
       const app = initializeApp(firebaseConfig);
       const db = getFirestore();
 
-    const replyClick = () => {
-        var y = document.getElementById("replyControl");
-        if (y.style.display === "none") { 
-            y.style.display = "block";
-        } else {
-            y.style.display = "none";
-        }
-    }
-
-    const postReply = () => { 
-        var userReplyInput = document.getElementById("postValue").value;
-        console.log(userReplyInput);
-    }
-
     return (
         <div className ="viewblog">
             <p>Here are all the blog posts from the community:</p>
-            <div class="rainbowBody">
-            <div id="reply">
-                    <button onClick={replyClick} id="replyButton">Reply</button>
-                    <div id ="replyControl">
-                        <textarea type="text" id="postValue"/>
-                        <br></br>
-                        <button onClick={postReply} id="postreplyButton">Post Reply</button>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
