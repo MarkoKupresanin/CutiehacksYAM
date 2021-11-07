@@ -38,6 +38,10 @@ const BlogList = () => {
     const postBlog = () => {
         var userPostInput = document.getElementById("textValue").value;
         console.log(userPostInput);
+        addDoc(collection(db, "posts"), {
+            content: userPostInput,
+            title: 'Marko is cool'
+            });
     }
 
     const replyClick = () => {
@@ -54,19 +58,8 @@ const BlogList = () => {
         console.log(userReplyInput);
         var userInput = document.getElementById("textValue").value;
         console.log(userInput);
-        const docRef = doc(db, "topics", "posts");
-        db.collection("values")
-            .doc(docRef)
-            .set({
-            content: userInput,
-            title: "marko is cool"
-            })
-            .then(function () {
-            console.log("Value successfully written!");
-            })
-            .catch(function (error) {
-            console.error("Error writing Value: ", error);
-            });
+
+
 
         // try {
         //     const docRef = doc(db, "topics");
