@@ -45,7 +45,7 @@ const BlogList = () => {
             <h2>Welcome, create a new blog!</h2> 
             <button onClick={createClick}>Create New Blog</button>
             <div id ="testControl">
-                <input type="text" id="textValue"/>
+                <textarea type="text" id="textValue"/>
                 <br></br>
                 <button onClick={postBlog} id="postButton">Post</button>
             </div>
