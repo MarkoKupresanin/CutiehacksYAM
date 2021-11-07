@@ -24,7 +24,7 @@ const BlogList = () => {
         } else {
             x.style.display = "none";
         }
-        const docRef = doc(db, "topics", "posts");
+        const docRef = doc(db,"posts");
         getDoc(docRef).then(docSnap=>{
           if (docSnap.exists()) {
             console.log("Document data:", docSnap.data());
@@ -40,7 +40,7 @@ const BlogList = () => {
         console.log(userPostInput);
         addDoc(collection(db, "posts"), {
             content: userPostInput,
-            title: 'Marko is cool'
+            title: 'this is the title'
             });
     }
 
