@@ -36,7 +36,6 @@ const BlogList = () => {
     }
 
     const postBlog = () => {
-<<<<<<< Updated upstream
         var userPostInput = document.getElementById("textValue").value;
         console.log(userPostInput);
     }
@@ -53,7 +52,6 @@ const BlogList = () => {
     const postReply = () => { 
         var userReplyInput = document.getElementById("postValue").value;
         console.log(userReplyInput);
-=======
         var userInput = document.getElementById("textValue").value;
         console.log(userInput);
         const docRef = doc(db, "topics", "posts");
@@ -80,7 +78,6 @@ const BlogList = () => {
         // } catch (e) {
         // console.error("Error adding document: ", e);
         // }
->>>>>>> Stashed changes
     }
 
     return (
