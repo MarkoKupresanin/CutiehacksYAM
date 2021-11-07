@@ -4,7 +4,6 @@ import Navbar from './NavBar';
 import Footer from './Footer';
 import Home from './Home';
 import BlogList from './BlogList'
-import BlogView from './BlogView'
 import NotFound from './NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -80,7 +79,6 @@ function App() {
       <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route path="/posts" component={BlogList}></Route>
-          <Route path="/BlogView" component={BlogView}></Route>
           <Route path="*" />
             <NotFound />
         <Navbar />
