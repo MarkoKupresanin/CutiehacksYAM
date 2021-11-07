@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './NavBar';
-<<<<<<< Updated upstream
 import Footer from './Footer';
 import Home from './Home';
 import BlogList from './BlogList'
@@ -12,9 +11,8 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 import { collection, getDocs } from "firebase/firestore"; 
 import { doc, getDoc } from "firebase/firestore";
-=======
+
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 
@@ -64,7 +62,7 @@ signInWithPopup(auth, provider)
     // ...
   });
 
->>>>>>> Stashed changes
+
 
 
 
@@ -91,12 +89,6 @@ function App() {
           </Route>
       </Switch>
       </div>
-<<<<<<< Updated upstream
-=======
-      
-      <button onClick="signInWithPopup">Sign In</button>
-      
->>>>>>> Stashed changes
     </div>
     <Footer />
   </Router>
