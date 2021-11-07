@@ -14,30 +14,34 @@ const BlogList = () => {
         appId: "1:878503987702:web:2e7e4c1251c266c4d4dfd7"
       };
     
-    
-    
       const app = initializeApp(firebaseConfig);
       const db = getFirestore();
-      
-      
+    
     const createClick = () => {
-
-        console.log("It works mf!");
-        const docRef = doc(db, "topics", "posts");
-        getDoc(docRef).then(docSnap=>{
-          if (docSnap.exists()) {
-            console.log("Document data:", docSnap.data());
-          } else {
-            // doc.data() will be undefined in this case
-            console.log("No such document!");
-          }
-        })
+        var x = document.getElementById("testControl");
+        if (x.style.display === "none") { 
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        //const docRef = doc(db, "topics", "posts");
+        // getDoc(docRef).then(docSnap=>{
+        //   if (docSnap.exists()) {
+        //     console.log("Document data:", docSnap.data());
+        //   } else {
+        //     // doc.data() will be undefined in this case
+        //     console.log("No such document!");
+        //   }
+        // })
     }
 
     return (
         <div className ="createblog">
-            <h2>Welcome, create a new blog!</h2>
+            <h2>Welcome, create a new blog!</h2> 
             <button onClick={createClick()}>Create Blog</button>
+            <div id ="testControl">
+                <input type="text"/>
+            </div>
         </div>
     );
 }
