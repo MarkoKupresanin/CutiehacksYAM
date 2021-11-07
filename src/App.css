@@ -93,3 +93,7 @@ footer {
   color: white;
   background-color: blue;
 }
+
+.blogViewBody {
+  background-image:linear-gradient(#A51C30,goldenrod,greenyellow,dodgerblue );
+}
