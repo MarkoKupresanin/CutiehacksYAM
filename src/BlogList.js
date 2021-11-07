@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs, addDoc } from "firebase/firestore"; 
 import { doc, getDoc } from "firebase/firestore";
 
 const BlogList = () => {
@@ -36,6 +36,7 @@ const BlogList = () => {
     }
 
     const postBlog = () => {
+<<<<<<< Updated upstream
         var userPostInput = document.getElementById("textValue").value;
         console.log(userPostInput);
     }
@@ -52,6 +53,34 @@ const BlogList = () => {
     const postReply = () => { 
         var userReplyInput = document.getElementById("postValue").value;
         console.log(userReplyInput);
+=======
+        var userInput = document.getElementById("textValue").value;
+        console.log(userInput);
+        const docRef = doc(db, "topics", "posts");
+        db.collection("values")
+            .doc(docRef)
+            .set({
+            content: userInput,
+            title: "marko is cool"
+            })
+            .then(function () {
+            console.log("Value successfully written!");
+            })
+            .catch(function (error) {
+            console.error("Error writing Value: ", error);
+            });
+
+        // try {
+        //     const docRef = doc(db, "topics");
+        //     addDoc(docRef).then({
+        //         content: userInput,
+        //         title: "my title!"
+        //     })
+        // console.log("Document written with ID: ", docRef.id);
+        // } catch (e) {
+        // console.error("Error adding document: ", e);
+        // }
+>>>>>>> Stashed changes
     }
 
     return (
