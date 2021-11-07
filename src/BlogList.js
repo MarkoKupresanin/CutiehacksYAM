@@ -4,7 +4,9 @@ import { getFirestore } from "firebase/firestore"
 import { collection, getDocs, addDoc } from "firebase/firestore"; 
 import { doc, getDoc } from "firebase/firestore";
 
+
 const BlogList = () => {
+  
     const firebaseConfig = {
         apiKey: "AIzaSyC3_QW2LaKIl4wJ2abltFtjuUbN9Nxbe7E",
         authDomain: "yamdata-9a05c.firebaseapp.com",
@@ -16,7 +18,14 @@ const BlogList = () => {
     
       const app = initializeApp(firebaseConfig);
       const db = getFirestore();
-    
+      const [Posts, setPosts]=useState([]);
+      useEffect(()=>{getDocs(collection(db, "posts")).then(querySnapshot => {
+        let temp = [];
+        
+        querySnapshot.forEach(query => {temp.push((query.data()))})
+        setPosts(temp);
+        })})
+      
     const createClick = () => {
         var x = document.getElementById("testControl");
         if (x.style.display === "none") { 
@@ -87,6 +96,7 @@ const BlogList = () => {
                         <textarea type="text" id="postValue"/>
                         <br></br>
                         <button onClick={postReply} id="postreplyButton">Post Reply</button>
+                        {Posts.map(post => <div >{JSON.stringify(post)}</div>)};
                     </div>
                 </div>
             </div>
