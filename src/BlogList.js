@@ -36,8 +36,22 @@ const BlogList = () => {
     }
 
     const postBlog = () => {
-        var userInput = document.getElementById("textValue").value;
-        console.log(userInput);
+        var userPostInput = document.getElementById("textValue").value;
+        console.log(userPostInput);
+    }
+
+    const replyClick = () => {
+        var y = document.getElementById("replyControl");
+        if (y.style.display === "none") { 
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+
+    const postReply = () => { 
+        var userReplyInput = document.getElementById("postValue").value;
+        console.log(userReplyInput);
     }
 
     return (
@@ -47,7 +61,15 @@ const BlogList = () => {
             <div id ="testControl">
                 <textarea type="text" id="textValue"/>
                 <br></br>
-                <button onClick={postBlog} id="postButton">Post</button>
+                <button onClick={postBlog} id="postButton">Post Blog</button>
+                <div id="reply">
+                    <button onClick={replyClick} id="replyButton">Reply</button>
+                    <div id ="replyControl">
+                        <textarea type="text" id="postValue"/>
+                        <br></br>
+                        <button onClick={postReply} id="postreplyButton">Post Reply</button>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -67,12 +67,29 @@ footer {
 
 #textValue {
   width: 500px;
+  height: 300px;
+}
+
+#postValue {
+  width: 250px;
   height: 200px;
 }
 
 #postButton {
-  width: 50px;
+  width: 100px;
   color: white;
   background-color: blue;
   
+}
+
+#replyButton {
+  width: 100px;
+  color: white;
+  background-color: goldenrod;
+}
+
+#postreplyButton {
+  width: 100px;
+  color: white;
+  background-color: blue;
 }
