@@ -44,23 +44,6 @@ const BlogList = () => {
             });
     }
 
-    const replyClick = () => {
-        var y = document.getElementById("replyControl");
-        if (y.style.display === "none") { 
-            y.style.display = "block";
-        } else {
-            y.style.display = "none";
-        }
-    }
-
-    const postReply = () => { 
-        var userReplyInput = document.getElementById("postValue").value;
-        console.log(userReplyInput);
-        var userInput = document.getElementById("textValue").value;
-        console.log(userInput);
-
-
-
         // try {
         //     const docRef = doc(db, "topics");
         //     addDoc(docRef).then({
@@ -71,7 +54,6 @@ const BlogList = () => {
         // } catch (e) {
         // console.error("Error adding document: ", e);
         // }
-    }
 
     return (
         <div className ="createblog">
@@ -81,14 +63,6 @@ const BlogList = () => {
                 <textarea type="text" id="textValue"/>
                 <br></br>
                 <button onClick={postBlog} id="postButton">Post Blog</button>
-                <div id="reply">
-                    <button onClick={replyClick} id="replyButton">Reply</button>
-                    <div id ="replyControl">
-                        <textarea type="text" id="postValue"/>
-                        <br></br>
-                        <button onClick={postReply} id="postreplyButton">Post Reply</button>
-                    </div>
-                </div>
             </div>
         </div>
     );
