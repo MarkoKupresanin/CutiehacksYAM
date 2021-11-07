@@ -64,3 +64,15 @@ footer {
   background-color: lightblue;
   margin-top: 20px;
 }
+
+#textValue {
+  width: 500px;
+  height: 200px;
+}
+
+#postButton {
+  width: 50px;
+  color: white;
+  background-color: blue;
+  
+}

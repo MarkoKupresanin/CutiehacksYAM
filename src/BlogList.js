@@ -24,23 +24,30 @@ const BlogList = () => {
         } else {
             x.style.display = "none";
         }
-        //const docRef = doc(db, "topics", "posts");
-        // getDoc(docRef).then(docSnap=>{
-        //   if (docSnap.exists()) {
-        //     console.log("Document data:", docSnap.data());
-        //   } else {
-        //     // doc.data() will be undefined in this case
-        //     console.log("No such document!");
-        //   }
-        // })
+        const docRef = doc(db, "topics", "posts");
+        getDoc(docRef).then(docSnap=>{
+          if (docSnap.exists()) {
+            console.log("Document data:", docSnap.data());
+          } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+          }
+        })
+    }
+
+    const postBlog = () => {
+        var userInput = document.getElementById("textValue").value;
+        console.log(userInput);
     }
 
     return (
         <div className ="createblog">
             <h2>Welcome, create a new blog!</h2> 
-            <button onClick={createClick}>Create Blog</button>
+            <button onClick={createClick}>Create New Blog</button>
             <div id ="testControl">
-                <input type="text"/>
+                <input type="text" id="textValue"/>
+                <br></br>
+                <button onClick={postBlog} id="postButton">Post</button>
             </div>
         </div>
     );
