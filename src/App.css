@@ -2,10 +2,24 @@
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 
 h1{
   color: skyblue;
   background-color: peachpuff;
+=======
+.g-signin{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+>>>>>>> Stashed changes
 }
 
 footer {
